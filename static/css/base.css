@@ -1,3 +1,16 @@
+:root {
+    --main-font: 'Cormorant Garamond', serif;
+    --alt-font: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    font-family: var(--main-font);
+  }
+  
+  p {
+    font-family: var(--alt-font);
+  }
+  
 html, body {
     height: 100%;
 }
