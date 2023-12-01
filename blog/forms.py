@@ -16,13 +16,13 @@ class BlogForm(forms.ModelForm):
             ]
                   
         labels = {
-            'title': 'Lesson title',
-            'image': 'Lesson image',
+            'title': 'Blog title',
+            'image': 'Blog image',
             'image_alt': 'Describe image',
-            'content': 'Lesson content',
-            'category': 'Lesson category',
+            'content': 'Blog content',
+            'category': 'Country',
             'status': 'Publish or Draft',
-            'excerpt': 'Lesson description',
+            'excerpt': 'Blog description',
             }
 
 

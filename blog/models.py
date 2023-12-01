@@ -90,14 +90,24 @@ class Blog(models.Model):
         return render(request, 'blog/blog_categories.html', {'categories': categories})
 
 class Comment(models.Model):
-    blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name="comments")
-    commenter = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments")
+    post = models.ForeignKey(
+        Blog, on_delete=models.CASCADE, related_name="comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["-created_on"]
 
     def __str__(self):
-        return f"Comment {self.body} by {self.commenter.username} on Blog '{self.blog.title}'"
+        return f"Comment {self.body} by {self.author}"
+
+    def save(self, *args, **kwargs):
+        # If the author is not set, set it to the currently logged-in user
+        if not self.author_id:
+            self.author = User.objects.get(username='your_logged_in_username')  # Replace with the appropriate way to get the current user
+        super().save(*args, **kwargs)
+
+    
