@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django_resized import ResizedImageField
 from django.utils.text import slugify
+from django.shortcuts import render
 
 # Create your models here.
 
@@ -80,6 +81,13 @@ class Blog(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+
+    def blog_categories(request):
+    # Retrieve all categories from the database
+        categories = Category.objects.all()
+
+    # Pass the categories to the template for rendering
+        return render(request, 'blog/blog_categories.html', {'categories': categories})
 
 class Comment(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name="comments")

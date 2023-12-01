@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#include ensures it links to the url in the home>urls page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
     path('accounts/', include('allauth.urls')),
+    path('blog/', include('blog.urls')),
+    path('', include('home.urls')),
 ]
