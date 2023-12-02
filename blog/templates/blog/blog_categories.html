@@ -1,26 +1,28 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}-{{blog.title}}{% endblock %}
-<!-- {% load crispy_forms_tags %} -->
+{% block title %}-{{ blog.title }}{% endblock %}
 
 {% block content %}
-<h1 class="text-center p-2">All Blogs</h1>
-<div class="container d-flex flex-row flex-wrap justify-content-center">
-    {% for blog in blogs %}
-    <!-- blog_categories.html -->
-
-    <a href="{% url 'view_blog' slug=blog.slug %}" class="blog" aria-label="Click to view {{blog.title}}">
-        <div class="card m-3 custom-card" style="width:18rem;">
-            <img src="{{ blog.image.url }}" class="card-img-top" alt="{{ blog.image_alt }}">
-            " class="card-img-top" alt="image of blog">
-            <div class="card-body">
-                <h2 class="card-title">{{blog.title}}</h2>
-                <p class="card-text">{{blog.excerpt|truncatechars:100}}</p>
+  <h1 class="text-center p-2">All Blogs</h1>
+  <div class="container">
+    <div class="row">
+      {% for blog in blogs %}
+        <div class="col-md-4">
+          <a href="{% url 'view_blog' slug=blog.slug %}" class="blog" aria-label="Click to view {{ blog.title }}">
+            <div class="card m-3 custom-card">
+              <img src="{{ blog.image.url }}" class="card-img-top" alt="{{ blog.image_alt }}">
+              <div class="card-body">
+                <h2 class="card-title">{{ blog.title }}</h2>
+                <p class="card-text">{{ blog.excerpt|truncatechars_html:30 }}</p>
+              </div>
             </div>
+          </a>
         </div>
-    </a>
+      {% endfor %}
     </div>
-    {% endfor %}
+  </div>
+{% endblock %}
+
     
     <!-- newly added -->
     <!-- <div class="container">
@@ -173,7 +175,6 @@
             </div>
         </div>
     </div> -->
-{% endblock %}
     {% block extras %}
     <script src="{% static 'js/comments.js' %}"></script>
     {% endblock %}
