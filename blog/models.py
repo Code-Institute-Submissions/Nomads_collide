@@ -65,7 +65,7 @@ class Blog(models.Model):
     image = ResizedImageField(size=[400, None], quality=75, upload_to='blogs/', force_format='WEBP', blank=False, null=False)
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     content = models.TextField()
-    category = models.CharField(max_length=100, choices=CATEGORY, default='afford')
+    category = models.CharField(max_length=100, choices=CATEGORY, default='albania')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
@@ -82,32 +82,27 @@ class Blog(models.Model):
     class Meta:
         ordering = ["-created_on"]
 
-    def blog_categories(request):
-    # Retrieve all categories from the database
-        categories = Category.objects.all()
+def blog_categories(request):
+    categories = Category.objects.all()
+    return render(request, 'blog/blog_categories.html', {'categories': categories})
 
-    # Pass the categories to the template for rendering
-        return render(request, 'blog/blog_categories.html', {'categories': categories})
+#class Comment(models.Model):
+#    post = models.ForeignKey(
+#        Blog, on_delete=models.CASCADE, related_name="comments")
+#    author = models.ForeignKey(
+#        User, on_delete=models.CASCADE, related_name="commenter")
+#    body = models.TextField()
+#    approved = models.BooleanField(default=False)
+#    created_on = models.DateTimeField(auto_now_add=True)
 
-class Comment(models.Model):
-    post = models.ForeignKey(
-        Blog, on_delete=models.CASCADE, related_name="comments")
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="commenter")
-    body = models.TextField()
-    approved = models.BooleanField(default=False)
-    created_on = models.DateTimeField(auto_now_add=True)
+#    class Meta:
+#        ordering = ["-created_on"]
 
-    class Meta:
-        ordering = ["-created_on"]
+#    def __str__(self):
+#        return f"Comment {self.body} by {self.author}"
 
-    def __str__(self):
-        return f"Comment {self.body} by {self.author}"
+#    def save(self, *args, **kwargs):
+#         if not self.author_id:
+#            self.author = User.objects.get(username='your_logged_in_username')  # Replace with the appropriate way to get the current user
+#        super().save(*args, **kwargs)
 
-    def save(self, *args, **kwargs):
-        # If the author is not set, set it to the currently logged-in user
-        if not self.author_id:
-            self.author = User.objects.get(username='your_logged_in_username')  # Replace with the appropriate way to get the current user
-        super().save(*args, **kwargs)
-
-    

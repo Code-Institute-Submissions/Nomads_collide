@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.views.generic import CreateView, ListView, DetailView
-from .models import Blog, Comment
-from .forms import BlogForm, CommentForm
+from .models import Blog
+#Comment
+from .forms import BlogForm
+#CommentForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import permission_required
 from django.utils.decorators import method_decorator
@@ -34,6 +36,7 @@ class BlogCategories(ListView):
     template_name='blog/blog_categories.html'
     model = Blog
     context_object_name='blogs'
+    
 
 class ViewBlog(DetailView):
     '''view a single blog'''
@@ -41,7 +44,7 @@ class ViewBlog(DetailView):
     model = Blog
     context_object_name='blog'
 
-    def get_context_data(self, **kwargs):
+    """def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         blog = self.get_object()
         comments = blog.comments.filter(approved=True).order_by("-created_on")
@@ -69,9 +72,10 @@ class ViewBlog(DetailView):
 
         return redirect('view_blog', slug=blog.slug)
 
+
 def edit_comment(request, slug, comment_id):
     """
-    view to edit comments
+    #view to edit comments
     """
     if request.method == "POST":
 
@@ -94,7 +98,7 @@ def edit_comment(request, slug, comment_id):
 
 def delete_comment(request, slug, comment_id):
     """
-    view to delete comment
+    #view to delete comment
     """
     queryset = Blog.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -107,6 +111,6 @@ def delete_comment(request, slug, comment_id):
         messages.add_message(request, messages.ERROR,
                             'You can only delete your own comments!')
 
-    return HttpResponseRedirect(reverse('view_blog', args=[slug]))
+    return HttpResponseRedirect(reverse('view_blog', args=[slug]))"""
 
 
