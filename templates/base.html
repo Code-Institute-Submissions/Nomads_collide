@@ -28,6 +28,13 @@
 <body>
   {% include 'includes/header.html' %}
 
+  {% if user.is_authenticated %}
+        <div class="alert" role="alert">
+            You are logged in as {{ user.username }}.
+        </div>
+    {% endif %}
+  
+
   <main>
     {% block content %}
       {% endblock %}

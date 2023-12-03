@@ -30,13 +30,13 @@
           <a class="nav-link" href="{% if blogs %}{% url 'view_blog' slug=blogs.0.slug %}{% endif %}">View blog</a>
         </li> -->
         <!-- id like to do the contact as a modal -->
-        {% endif %}
+      {% else %}
       </div>
       <div class="ml-auto sign-up">
         <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
           href="{% url 'account_login' %}">Login</a>
       </div>
-      
+      {% endif %}
     </div>
   </nav>
 </section>
