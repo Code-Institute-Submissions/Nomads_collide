@@ -11,24 +11,29 @@
       </div>
     </div>
   </div>
-<!-- subheading links -->
+
+  <!-- subheading links -->
   <div class="container-fluid my-4">
     <div class="row">
-      <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-        <h2>Inspired Creations</h2>
-        <p>Nature and Travel Infused Artistry</p>
-        <a href="#" class="btn stories align-content-center">Learn More</a>
-      </div>
-      <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-        <h2>Capturing the Beauty</h2>
-        <p>The visual journey through my lens</p>
-        <a href="#" class="btn stories">Learn More</a>
-      </div>
-      <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-        <h2>Harmony with the Earth</h2>
-        <p>Nurturing the Land and Living Sustainably</p>
-        <a href="#" class="btn stories">Learn More</a>
-      </div>
+      {% if user.is_authenticated %}
+        <!-- Display this section to logged-in users -->
+        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
+          <h2>Inspired Creations</h2>
+          <p>Nature and Travel Infused Artistry</p>
+          <a href="#" class="btn stories align-content-center">Learn More</a>
+        </div>
+        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
+          <h2>Capturing the Beauty</h2>
+          <p>The visual journey through my lens</p>
+          <a href="#" class="btn stories">Learn More</a>
+        </div>
+        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
+          <h2>Harmony with the Earth</h2>
+          <p>Nurturing the Land and Living Sustainably</p>
+          <a href="#" class="btn stories">Learn More</a>
+        </div>
+      
+      {% endif %}
     </div>
   </div>
 {% endblock %}
