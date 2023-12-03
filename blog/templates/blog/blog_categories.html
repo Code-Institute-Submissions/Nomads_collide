@@ -14,6 +14,7 @@
               <div class="card-body">
                 <h2 class="card-title">{{ blog.title }}</h2>
                 <p class="card-text">{{ blog.excerpt|truncatechars_html:30 }}</p>
+                <p>Published on: {{ blog.created_on }}</p>
               </div>
             </div>
           </a>

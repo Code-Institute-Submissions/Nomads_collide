@@ -71,6 +71,9 @@ class Blog(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+    def get_absolute_url(self):
+        return reverse('view_blog', args=[str(self.slug)])
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)

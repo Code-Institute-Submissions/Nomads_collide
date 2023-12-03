@@ -15,6 +15,7 @@
           <h2>{{ blog.title }}</h2>
           <!-- Display the content -->
           <p>{{ blog.content }}</p>
+          <p>Published on: {{ blog.created_on }}</p>
 
           {% if request.user == blog.user %}
           <div class="text-center">

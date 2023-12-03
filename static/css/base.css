@@ -1,8 +1,28 @@
 :root {
+    /* font */
     --main-font: 'Cormorant Garamond', serif;
     --alt-font: 'Montserrat', sans-serif;
+    /* colours */
+
   }
   
+  :root {
+    /* Fonts */
+    --title: 'Josefin Sans', sans-serif;
+    --main-font: 'Josefin Sans', sans-serif;
+    /* Colours */
+    background-color:#e6ad96;
+    background-color:#cb9884;
+    color: #fff;
+    background-color: rgba(254, 251, 251, 0.991); 
+    background-color: rgba(142, 125, 110, 0.68);
+    /* Utils */
+    --small-box-shadow: 1px -1px 9px 0 #00000061;
+    --border: 1px solid var(--grey);
+
+}
+
+
   body {
     font-family: var(--main-font);
   }
