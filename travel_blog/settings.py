@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-staceyrb89-nomadscollid-i01xytia879.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-staceyrb89-nomadscollid-rylmfo254op.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -110,7 +110,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     'http://*.gitpod.io',
     'http://*.herokuapp.com',
-    'https://8000-staceyrb89-nomadscollid-i01xytia879.ws-eu106.gitpod.io',
+    'https://8000-staceyrb89-nomadscollid-rylmfo254op.ws-eu106.gitpod.io',
 ]
 
 # Password validation

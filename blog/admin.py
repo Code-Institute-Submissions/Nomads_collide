@@ -9,7 +9,7 @@ class BlogAdmin(admin.ModelAdmin):
     list_display = (
         'title',
         'slug',
-        'author',
+        'user',
         'image',
         'image_alt',
         'content',

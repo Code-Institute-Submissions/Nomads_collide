@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import (CreateView, ListView, 
+DetailView, DeleteView, UpdateView)
 from .models import Blog
 #Comment
 from .forms import BlogForm
 #CommentForm
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin, UserPassesTestMixin)
 from django.contrib.auth.decorators import permission_required
 from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
@@ -17,18 +19,10 @@ class AddPost(LoginRequiredMixin, CreateView):
     template_name = 'blog/add_post.html'
     model = Blog
     form_class = BlogForm
-    success_url = '/blogs'
-
-    @method_decorator(permission_required('blogs.add_blog', raise_exception=True))
-    def dispatch(self, *args, **kwargs):
-        try:
-            return super().dispatch(*args, **kwargs)
-        except PermissionDenied:
-            messages.error(self.request, "You don't have permission to access this page.")
-            return HttpResponseRedirect('home')
+    success_url = '/blog/'
 
     def form_valid(self, form):
-        form.instance.author = self.request.user
+        form.instance.user = self.request.user
         return super(AddPost, self).form_valid(form)
 
 class BlogCategories(ListView):
@@ -43,6 +37,25 @@ class ViewBlog(DetailView):
     template_name='blog/view_blog.html'
     model = Blog
     context_object_name='blog'
+
+class EditBlog(
+    LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    template_name = 'blog/edit_blog.html'
+    model = Blog
+    fields = ['title', 'image', 'image_alt', 'content', 'category', 'status', 'excerpt',]
+    success_url = '/blog/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+class DeleteBlog(
+    LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a blog"""
+    model = Blog
+    success_url = '/blog/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
 
     """def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
