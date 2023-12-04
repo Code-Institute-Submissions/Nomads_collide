@@ -1,35 +1,25 @@
-:root {
+ :root { 
     /* font */
     --main-font: 'Cormorant Garamond', serif;
-    --alt-font: 'Montserrat', sans-serif;
-    /* colours */
-
-  }
-  
-  :root {
-    /* Fonts */
-    --title: 'Josefin Sans', sans-serif;
-    --main-font: 'Josefin Sans', sans-serif;
+    --alt-font: 'Montserrat', sans-serif; 
     /* Colours */
     background-color:#e6ad96;
     background-color:#cb9884;
     color: #fff;
     background-color: rgba(254, 251, 251, 0.991); 
-    background-color: rgba(142, 125, 110, 0.68);
+    background-color: rgba(142, 125, 110, 0.68); 
     /* Utils */
     --small-box-shadow: 1px -1px 9px 0 #00000061;
     --border: 1px solid var(--grey);
+} 
 
-}
-
-
-  body {
+.h1, h2, h3, h4 {
     font-family: var(--main-font);
-  }
+}
   
-  p {
+p {
     font-family: var(--alt-font);
-  }
+}
   
 html, body {
     height: 100%;
@@ -41,11 +31,77 @@ body {
     font-family: var(--main-font);
 }
 
+/* text on index page */
+.info-text {
+  background-color: #d3c8c4;
+  margin: 1px;
+  max-width: 1600px;
+  padding: 20px;
+}
+.info-text1 {
+  font-size: 1.5rem;
+}
+.info-text-font {
+  font-size: 25rem;
+}
+
+/* jumbotron image */
+.jumbotron-container {
+  background-image: url('https://res.cloudinary.com/ddqp69pru/image/upload/v1701382924/slovenia2_kg8nfw.jpg');
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: overlay;
+  height: 400px;
+  background-size: cover;
+  background-position: center-left;
+}
+
+.text-container {
+  color: white;
+}
+
+.btn-start-journey {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-start-journey:hover {
+  background-color: rgba(254, 251, 251, 0.991); 
+}
+
+.alert {
+  margin-bottom: 0;
+  padding: 10px;
+}
 main {
     flex: 1 0 auto;
     background-color: var(--white);
 }
 
+.btn-start-journey2 {
+  background-color: #c69c8b;
+  color: rgb(0, 0, 0);
+}
+
+.btn-start-journey2:hover {
+  background-color:#cb9884;
+
+}
+
+.recents {
+  background-color: #d8a996;
+  color: rgb(0, 0, 0);
+}
+
+.recents:hover {
+  background-color:#cb9884;
+
+}
+
+.sign-up-link {
+  color: black;
+  text-decoration: black;
+}
 
 /* Footer */
 /* footer {

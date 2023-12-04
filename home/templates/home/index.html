@@ -1,64 +1,72 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <!-- Jumbotron -->
-  <div class="p-2 text-center rounded-3 jumbotron-container">
-    <div class="jumbo d-flex justify-content-center align-items-center h-100 text-container">
-      <div>
-        <h2>Exploring Life's Diverse Passions</h2>
-        <h4>A World of Nature, Travel, Creativity, and Sustainability</h4>
-        <a class="btn btn-start-journey btn-lg" href="#" role="button">Start Your Journey</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- subheading links -->
-  <div class="container-fluid my-4">
-    <div class="row">
+<!-- Jumbotron -->
+<div class="p-2 text-center rounded-3 jumbotron-container">
+  <div class="jumbo d-flex justify-content-center align-items-center h-100 text-container">
+    <div>
+      <h2>Exploring Life's Diverse Passions</h2>
+      <h4>A World of Nature, Travel, Creativity, and Sustainability</h4>
       {% if user.is_authenticated %}
-        <!-- Display this section to logged-in users -->
-        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-          <h2>Inspired Creations</h2>
-          <p>Nature and Travel Infused Artistry</p>
-          <a href="#" class="btn stories align-content-center">Learn More</a>
-        </div>
-        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-          <h2>Capturing the Beauty</h2>
-          <p>The visual journey through my lens</p>
-          <a href="#" class="btn stories">Learn More</a>
-        </div>
-        <div class="col-md-4 pb-2 pt-2 text-center text-md-left">
-          <h2>Harmony with the Earth</h2>
-          <p>Nurturing the Land and Living Sustainably</p>
-          <a href="#" class="btn stories">Learn More</a>
-        </div>
-        <div class="container">
-          <div class="row">
-            
-            </div>
-          </div>
-          <!-- Recent Blog Posts -->
-        <div class="container my-4">
-          <h3>Recent Blog Posts</h3>
-          <div class="row">
-            {% for post in recent_posts %}
-              <div class="col-md-4 mb-4">
-                <div class="card">
-                  <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.image_alt }}">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.created_on }}</p>
-                    <p class="card-text">{{ post.excerpt }}</p>
-                    <a href="{% url 'view_blog' slug=post.slug %}" class="btn btn-primary">Read More</a>
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
+      <a class="btn btn-start-journey btn-lg" href="{% url 'blog_categories' %}" role="button">Track Our Journey</a>
       {% endif %}
     </div>
   </div>
+</div>
+<div class="container info-text mx-auto">
+  <div class="row">
+    <div class="col-md-6 pb-2 pt-2 text-center text-md-left">
+      <h2 class="index-text-font">Why you should join?</h2>
+      <p class="index-font1">Join our blog community for an inspiring journey! Explore captivating narratives and
+        stunning photos of diverse
+        destinations. Sign up to share in cultural encounters and awe-inspiring landscapes. Whether an avid traveler or
+        armchair explorer, our blog opens doors to endless possibilities. Register to stay updated on our travels, enjoy
+        exclusive viewing privileges, and be part of our travel story!
+      </p>
+    </div>
+    <div class="col-md-6 pb-2 pt-2 text-center text-md-left">
+      <h2 class="index-text-font">Join the community</h2>
+      <p class="index-font1">Embark on a journey through our blog to explore diverse cultures, savor culinary delights,
+        and ignite your wanderlust. Join us for an inspiring odyssey of travel experiences in just a click!
+      </p>
+    </div>
+    <div class="container">
+    <div class="row text-center">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <a href="{{ signup_url }}" class="btn stories btn-start-journey2">Join Us!</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- subheading links -->
+<div class="container-fluid my-4">
+  <div class="row">
+    {% if user.is_authenticated %}
+    <!-- Recent Blog Posts -->
+    <div class="container my-4">
+      <h3>Recent Blog Posts</h3>
+      <div class="row">
+        {% for post in recent_posts %}
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.image_alt }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.created_on }}</p>
+              <p class="card-text">{{ post.excerpt }}</p>
+              <a href="{% url 'view_blog' slug=post.slug %}" class="btn recents">Read More</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
 {% endblock %}
 </body>
+
 </html>

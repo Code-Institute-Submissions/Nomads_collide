@@ -1,27 +1,24 @@
-{% extends "account/base_manage.html" %}
-{% load allauth i18n %}
-{% block head_title %}
-    {% trans "Sign Out" %}
-{% endblock head_title %}
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Sign Out" %}{% endblock %}
 {% block content %}
-    {% element h1 %}
-        {% trans "Sign Out" %}
-    {% endelement %}
-    <p>{% trans 'Are you sure you want to sign out?' %}</p>
-    {% url 'account_logout' as action_url %}
-    {% element form method="post" action=action_url no_visible_fields=True %}
-        {% slot body %}
-            {% csrf_token %}
-            {% if redirect_field_value %}
-                <input type="hidden"
-                       name="{{ redirect_field_name }}"
-                       value="{{ redirect_field_value }}" />
-            {% endif %}
-        {% endslot %}
-        {% slot actions %}
-            {% element button type="submit" %}
-                {% trans 'Sign Out' %}
-            {% endelement %}
-        {% endslot %}
-    {% endelement %}
-{% endblock content %}
+
+<div class="container text-center justify-content-center">
+    <div class="row">
+        <div class="col-md-8 mt-3 mx-auto">
+            <h3>{% trans "Signing Out" %}</h3>
+            <p>
+                {% trans 'Are you sure you want to sign out?' %}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 mx-auto">
+            <form class="form p-2" method="POST" action="{% url 'account_logout' %}">
+                {% csrf_token %}
+                <button class="btn recents w-25 mb-2" type="submit">{% trans "Sign Out" %} <i
+                        class="fa-solid fa-earth-americas"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

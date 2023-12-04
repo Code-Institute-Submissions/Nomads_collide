@@ -15,7 +15,7 @@ from django.core.exceptions import PermissionDenied
 
 # Create your views here.
 
-class AddPost(LoginRequiredMixin, CreateView):
+class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     template_name = 'blog/add_post.html'
     model = Blog
     form_class = BlogForm
@@ -24,6 +24,10 @@ class AddPost(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddPost, self).form_valid(form)
+
+    def test_func(self):
+        # Check if the user is a staff member
+        return self.request.user.is_staff
 
 class BlogCategories(ListView):
     '''view all blogs'''

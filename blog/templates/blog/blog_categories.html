@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row">
       {% for blog in blogs %}
-        <div class="col-md-4">
+        <div class="col-lg-4 col-sm-6 ">
           <a href="{% url 'view_blog' slug=blog.slug %}" class="blog" aria-label="Click to view {{ blog.title }}">
             <div class="card m-3 custom-card">
               <img src="{{ blog.image.url }}" class="card-img-top" alt="{{ blog.image_alt }}">
