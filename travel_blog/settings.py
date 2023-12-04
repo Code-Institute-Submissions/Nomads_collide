@@ -52,8 +52,8 @@ INSTALLED_APPS = [
 
     #Others
     'cloudinary',
-    'crispy_bootstrap5',
     'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 SITE_ID = 1
@@ -71,8 +71,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
 ]
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ROOT_URLCONF = 'travel_blog.urls'
 
