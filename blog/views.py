@@ -35,6 +35,7 @@ class BlogCategories(ListView):
     template_name='blog/blog_categories.html'
     model = Blog
     context_object_name='blogs'
+    fields = ['title', 'image', 'category']
     
 
 class ViewBlog(DetailView):

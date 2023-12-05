@@ -35,6 +35,10 @@ nav a.nav-link{
   color: black;
 }
 
+.plain {
+  color: black;
+}
+
 /* text on index page */
 .info-text {
   background-color: #d3c8c4;
@@ -79,7 +83,7 @@ nav a.nav-link{
 }
 main {
     flex: 1 0 auto;
-    background-color: var(--white);
+    background-color: #f1e6e6;
 }
 
 .btn-start-journey2 {

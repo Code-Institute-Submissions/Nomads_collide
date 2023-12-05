@@ -10,12 +10,14 @@
         <div class="col-lg-4 col-sm-6 mb-4">
           <a href="{% url 'view_blog' slug=blog.slug %}" class="blog" aria-label="Click to view {{ blog.title }}">
             <div class="card h-100">
+              <p class="plain text-capitalize text-center mt-1 mb-1">{{ blog.category }}</p>
               <img src="{{ blog.image.url }}" class="card-img-top img-fluid aspect-ratio-object" alt="{{ blog.image_alt }}">
               <div class="card-body">
-                <h2 class="card-title">{{ blog.title }}</h2>
-                <p class="card-text">{{ blog.excerpt|truncatechars_html:30 }}</p>
-                <p>Published on: {{ blog.created_on }}</p>
-              </div>
+                <h2 class="card-title plain text-center">{{ blog.title }}</h2>
+                <p class="card-text plain text-center">{{ blog.excerpt|truncatechars_html:30 }}</p>
+               </div> 
+               <p class="plain align-text-bottom m-2 text-center">Published on: {{ blog.created_on }}</p>
+              
             </div>
           </a>
         </div>
