@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import permission_required
 from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
 from django.core.exceptions import PermissionDenied
+from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -56,10 +57,11 @@ class DeleteBlog(
     LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete a blog"""
     model = Blog
-    success_url = '/blog/'
+    success_url = reverse_lazy('blog_home')
 
     def test_func(self):
         return self.request.user == self.get_object().user
+
 
 def blog_home(request):
     recent_posts = Blog.objects.filter(status=1).order_by('-created_on')[:3]

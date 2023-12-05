@@ -12,7 +12,5 @@ urlpatterns = [
     path("delete/<int:pk>/", DeleteBlog.as_view(), name='delete_blog'),
     path("edit/<int:pk>/", EditBlog.as_view(), name='edit_blog'),
     path('', blog_home, name='blog_home'),
-    #path('blog/<slug:slug>/edit_comment/<int:comment_id>', edit_comment, name='edit_comment'),
-    #path('blog/<slug:slug>/delete_comment/<int:comment_id>', delete_comment, name='delete_comment'),
 ]
 

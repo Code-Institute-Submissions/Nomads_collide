@@ -31,6 +31,10 @@ body {
     font-family: var(--main-font);
 }
 
+nav a.nav-link{
+  color: black;
+}
+
 /* text on index page */
 .info-text {
   background-color: #d3c8c4;
@@ -102,6 +106,7 @@ main {
   color: black;
   text-decoration: black;
 }
+
 
 /* Footer */
 /* footer {
