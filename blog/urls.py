@@ -11,6 +11,5 @@ urlpatterns = [
     path("blog/<slug:slug>/", ViewBlog.as_view(), name='view_blog'),
     path("delete/<int:pk>/", DeleteBlog.as_view(), name='delete_blog'),
     path("edit/<int:pk>/", EditBlog.as_view(), name='edit_blog'),
-    path('', blog_home, name='blog_home'),
+    path('', blog_home, name='blog_home')
 ]
-

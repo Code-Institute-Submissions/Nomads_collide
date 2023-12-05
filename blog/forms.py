@@ -40,7 +40,3 @@ class BlogForm(forms.ModelForm):
 
         return instance
 
-#class CommentForm(forms.ModelForm):
-#    class Meta:
-#        model = Comment
-#        fields = ('body',)

@@ -16,9 +16,14 @@
           <!-- Display the content -->
           <p>{{ blog.content }}</p>
           <p>Published on: {{ blog.created_on }}</p>
-
-          {% if request.user == blog.user %}
           <div class="text-center">
+            
+          </div>
+
+          
+          <div class="text-center">
+              <a href="{% url 'blog_categories' %}" class="btn recents w-25">Return</a>
+              {% if request.user == blog.user %} 
               <a href="{% url 'edit_blog' blog.id %}" class="btn recents w-25">Edit</a>
               <a href="{% url 'delete_blog' blog.id %}" class="btn recents w-25">Delete</a>
           </div>
