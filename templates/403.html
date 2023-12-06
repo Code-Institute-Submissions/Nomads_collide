@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-
-{% block title %}Delete 
-    <div class="container text-center">
+{% block title %}Delete{% endblock %}
+{% block content %}
+    <div class="container text-center p-3">
         <h1>403 - Unauthorized Access</h1>
         <p>You're not authoirized to perform this action</p>
-        <a href="{% url 'home' %}"class="btn btn-primary w=25">Home</a>
+        <a href="{% url 'home' %}"class="btn recents w=25">Home</a>
     </div>
 {% endblock %} 

@@ -27,8 +27,8 @@ class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
         return super(AddPost, self).form_valid(form)
 
     def test_func(self):
-        # Check if the user is a staff member
-        return self.request.user.is_staff
+        # Check if the user is a superuser
+        return self.request.user.is_superuser
 
 class BlogCategories(ListView):
     '''view all blogs'''
@@ -52,7 +52,8 @@ class EditBlog(
     success_url = '/blog/'
 
     def test_func(self):
-        return self.request.user == self.get_object().user
+        # Check if the user is a superuser
+        return self.request.user.is_superuser
 
 class DeleteBlog(
     LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -61,7 +62,8 @@ class DeleteBlog(
     success_url = reverse_lazy('blog_home')
 
     def test_func(self):
-        return self.request.user == self.get_object().user
+        # Check if the user is a superuser
+        return self.request.user.is_superuser
 
 
 def blog_home(request):
