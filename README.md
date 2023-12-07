@@ -200,7 +200,15 @@ Your emphasis on addressing the most important issues for the MVP demonstrates a
  
 ## Testing
  
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+|                     | Expected outcome                            | Testing Performance | Pass/Fail |
+|---------------------|---------------------------------------------|:-------------------:|:---------:|
+| navbar - home       | when clicked should  redirect to home       | clicked home        | pass      |
+| navbar - add post   | when clicked should  redirect to add post   | clicked add post    | pass      |
+| navbar - logout     | when clicked should redirect to logout page | clicked logout      | pass      |
+| navbar - categories | when clicked should  redirect to all blogs  | clicked categories  | pass      |
+| navbar - login      | when clicked should redirect  to login page | clicked login       | pass      |
+
+
  
 ## Deployment
  
