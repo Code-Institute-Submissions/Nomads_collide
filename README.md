@@ -285,7 +285,7 @@ I have used the recommended [Python Validator](https://pep8ci.herokuapp.com/) to
 
 I have included links to the errors I encountered during validation which I corrected.
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
 
 - [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
 
