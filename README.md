@@ -175,6 +175,9 @@ content. By offering these tailored experiences, our project caters to a diverse
 
 > Deciding to hold off on the comments section was a tough call, but the ERD showed me how complex it could get. So, I deferred it to make sure the MVP hit the ground running. ERDs aren't just diagrams; they're practical tools for smart planning, letting me roll out features one step at a time.
 
+![image](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/9bc22daf-ce23-46ba-b933-00a7dd1efe1c)
+
+
 ## Agile Development Process
 ### GitHub Projects
 > Github Projects became my go-to hub, helping me juggle the different roles I had to play. With the clock ticking for the one-week MVP, that board kept me sane. It became a visual roadmap, letting me break down tasks into bite-sized chunks. Whether I was coding, designing, or playing the editor, that project board made sure nothing fell through the cracks. Wearing many hats is no joke, but having a structured plan in GitHub made it a whole lot smoother.
