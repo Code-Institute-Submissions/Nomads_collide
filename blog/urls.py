@@ -1,7 +1,6 @@
 from django.urls import path
 from .views import (AddPost, BlogCategories, 
 ViewBlog, DeleteBlog, EditBlog, blog_home)
-#edit_comment, delete_comment
 from home.views import Index
 
 

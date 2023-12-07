@@ -4,8 +4,6 @@ from django_resized import ResizedImageField
 from django.utils.text import slugify
 from django.shortcuts import render
 
-# Create your models here.
-
 CATEGORY = (
     ('albania', 'Albania'),
     ('andorra', 'Andorra'),

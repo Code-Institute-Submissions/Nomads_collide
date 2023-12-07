@@ -3,9 +3,7 @@ from django.contrib import messages
 from django.views.generic import (CreateView, ListView, 
 DetailView, DeleteView, UpdateView)
 from .models import Blog
-#Comment
 from .forms import BlogForm
-#CommentForm
 from django.contrib.auth.mixins import (
     LoginRequiredMixin, UserPassesTestMixin)
 from django.contrib.auth.decorators import permission_required
@@ -13,8 +11,6 @@ from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
-
-# Create your views here.
 
 class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     template_name = 'blog/add_post.html'
