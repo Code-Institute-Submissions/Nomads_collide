@@ -199,14 +199,64 @@ Your emphasis on addressing the most important issues for the MVP demonstrates a
 
  
 ## Testing
+
+### Site visitor
+
+|          | Expected outcome                             | Testing Performance | Pass/Fail |
+|----------|----------------------------------------------|:-------------------:|:---------:|
+| Homepage | when clicked should redirect to sign up page | clicked the join us | pass      |
+
+|                             | Expected outcome                                                                            | Testing Performance | Pass/Fail |
+|-----------------------------|---------------------------------------------------------------------------------------------|:-------------------:|:---------:|
+| footer - home               | when clicked should  redirect to home                                                       |     clicked home    |    pass   |
+| footer - sign up            | when clicked should  redirect to sign up page                                               |   clicked sign up   |    pass   |
+| footer- login               | when clicked should redirect to login page (this link isn't visible once logged in)         |    clicked login    |    pass   |
+| footer - social media links | when clicked should redirect to social media pages (this link isn't visible once logged in) |    clicked icons    |    pass   |
+
+### Site user
+
+|                                           | Expected outcome                           | Testing Performance | Pass/Fail |
+|-------------------------------------------|--------------------------------------------|:-------------------:|:---------:|
+| homepage - track our  journey button      | when clicked should  redirect to home      | clicked home        | pass      |
+| homepage - recent blog  cards - read more | when clicked should  redirect to view post | clicked read more   | pass      |
+
+|                            | Expected outcome                           | Testing Performance | Pass/Fail |
+|----------------------------|--------------------------------------------|:-------------------:|:---------:|
+| categories - click on card | when clicked should  redirect to view blog | clicked the card    | pass      |
+
+|            | Expected outcome                                    |    Testing Performance    | Pass/Fail |
+|------------|-----------------------------------------------------|:-------------------------:|:---------:|
+| view blog  | when clicked should  redirect to all posts          | clicked the return button | pass      |
+|            | when typed into url redirected to 403 page          | force in through url      | pass      |
+|            | when typed into url redirected to 403 page          | force in through url      | pass      |
+
+### As superuser/admin
  
-|                     | Expected outcome                            | Testing Performance | Pass/Fail |
-|---------------------|---------------------------------------------|:-------------------:|:---------:|
-| navbar - home       | when clicked should  redirect to home       | clicked home        | pass      |
-| navbar - add post   | when clicked should  redirect to add post   | clicked add post    | pass      |
-| navbar - logout     | when clicked should redirect to logout page | clicked logout      | pass      |
-| navbar - categories | when clicked should  redirect to all blogs  | clicked categories  | pass      |
-| navbar - login      | when clicked should redirect  to login page | clicked login       | pass      |
+|                     | Expected outcome                                                 |    Testing Performance   | Pass/Fail |
+|---------------------|------------------------------------------------------------------|:------------------------:|:---------:|
+| navbar - home       | when clicked should  redirect to home                            |       clicked home       |    pass   |
+| navbar - add post   | when clicked should  redirect to add post                        |     clicked add post     |    pass   |
+| navbar - logout     | when clicked should redirect to logout page                      |      clicked logout      |    pass   |
+| navbar - categories | when clicked should  redirect to all blogs                       |    clicked categories    |    pass   |
+| navbar - login      | when clicked should redirect  to login page                      |       clicked login      |    pass   |
+| navbar -login       | when clicked on reset password should redirect to reset password | click forgotten password |    pass   |
+| reset password      | when clicked on reset password should redirect to login page     |       click submit       |    fail   |    
+
+
+|                                           | Expected outcome                           | Testing Performance | Pass/Fail |
+|-------------------------------------------|--------------------------------------------|:-------------------:|:---------:|
+| homepage - track our  journey button      | when clicked should  redirect to home      | clicked home        | pass      |
+| homepage - recent blog  cards - read more | when clicked should  redirect to view post | clicked read more   | pass      |
+
+|                            | Expected outcome                           | Testing Performance | Pass/Fail |
+|----------------------------|--------------------------------------------|:-------------------:|:---------:|
+| categories - click on card | when clicked should  redirect to view blog | clicked the card    | pass      |
+
+|            | Expected outcome                                    |    Testing Performance    | Pass/Fail |
+|------------|-----------------------------------------------------|:-------------------------:|:---------:|
+| view blog  | when clicked should  redirect to all posts          | clicked the return button | pass      |
+|            | when clicked on edit button redirected to edit page | click edit button         | pass      |
+|            | when clicked should redirect to delete page         | click delete button       | pass      |
 
 
  
