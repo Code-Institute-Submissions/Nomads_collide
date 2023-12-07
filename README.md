@@ -269,7 +269,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 **link the html screen shot**
 
-![W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F)
+- [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F)
 
 ### CSS
 
@@ -277,7 +277,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 **link to CSS screen shot**
 
-![CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Python
 
@@ -285,25 +285,25 @@ I have used the recommended [Python Validator](https://pep8ci.herokuapp.com/) to
 
 I have included links to the errors I encountered during validation which I corrected.
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/urls.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/urls.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/views.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/views.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/admin.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/admin.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/forms.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/forms.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/models.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/models.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/urls.py)
 
-![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/views.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/views.py)
 
 ## Lighthouse Audit
 
@@ -343,7 +343,9 @@ Contrastingly, on the live deployment site hosted on Heroku, the debugging mode 
 ** It is important to note that while external resources were used for guidance and learning, the project's creative and intellectual aspects, including writing, color selection, and media content, are entirely my own. Proper attribution and acknowledgment have been made for any external contributions to the codebase or troubleshooting processes. **
  
  
-### Content
+### 
+| Source | Location | Notes |
+| --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
 | [Youtube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc) | All of it |
