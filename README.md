@@ -287,23 +287,23 @@ I have included links to the errors I encountered during validation which I corr
 
 - [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/urls.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/urls.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/views.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/views.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/admin.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/admin.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/forms.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/forms.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/models.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/models.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/urls.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/urls.py)
 
-- [Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/views.py)
+- [Python Validator](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/views.py)
 
 ## Lighthouse Audit
 
