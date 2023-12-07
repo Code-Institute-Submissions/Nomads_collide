@@ -76,7 +76,6 @@ I've used [canva](https://canva.com) to design my site wireframes.
 - The wireframes for mobile are limited due to many of the extra pages, are forms, sign in or out pages and error pages which will all be responsive and fit to the size required.
 ![wireframe mobile](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/1873770c-1b46-4a59-8e7c-ea5b5ca99012)
 
- 
 ### Tablet/Desktop Wireframes
 - Visitor view
 ![wireframe visitor](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/6024f6c1-1d2b-4517-b8c8-13621e671957)
@@ -104,7 +103,11 @@ Once you've registered, a whole new world opens up. You'll get a personalized ho
 journey through our blog posts, where you can explore a variety of content featuring both captivating visuals and engaging writing. The "View Blog" page allows you to navigate 
 seamlessly through our posts, and there's a handy "Return" button for convenient navigation.
 
-![admin user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/f61a36b2-2c55-44ec-ac4d-dd680b295a2f)
+![as user 1](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/953858e8-8644-4e9c-9800-6ff9a0cd3010)
+
+![as user 3](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/b6d8cd8a-02e4-4180-af25-7e8fd5394ca0)
+
+![as user2](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/12be5d80-0716-4785-a354-af62e1f0d411)
 
 
 ##### For Superusers:
@@ -117,32 +120,11 @@ process ensures that managing content is not only efficient but also user-friend
 
 ![website admin-user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/2965849b-48c0-4329-bdc0-5d07e0e552bb)
 
+![admin user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/f61a36b2-2c55-44ec-ac4d-dd680b295a2f)
 Adding Value for Everyone:
 Each feature has a distinct purpose. For visitors, it's about a visually captivating introduction. Logged-in users enjoy a personalized exploration, and superusers take command of the 
 content. By offering these tailored experiences, our project caters to a diverse audience, making the blog a vibrant and engaging space for all.
  
-## Existing Features
- 
-- **Title for feature #1**
- 
-	- Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
- 
-![screenshot](documentation/feature01.png)
- 
-- **Title for feature #2**
- 
-	- Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
- 
-![screenshot](documentation/feature02.png)
- 
-- **Title for feature #3**
- 
-	- Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
- 
-![screenshot](documentation/feature03.png)
- 
-## Future Plans for Nomads Collide:
-
 ## Category Expansion:
 
 ### Enhanced Search Functionality:
@@ -188,6 +170,8 @@ content. By offering these tailored experiences, our project caters to a diverse
   
 ## Database Design
 > When I was putting together my blog website, sketching out an Entity Relationship Diagram (ERD) turned out to be helpful in establishing my models. It was like creating a roadmap for the database – making it clear where everything connects. With a tight one-week deadline to get the MVP out, that ERD was my guiding light. It helped me narrow down my focus to the absolute must-haves: user registration and blog post creation.
+
+![erd](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/7844b3d2-7d51-4fc5-99e4-068ae1d1e7a4)
 
 > Deciding to hold off on the comments section was a tough call, but the ERD showed me how complex it could get. So, I deferred it to make sure the MVP hit the ground running. ERDs aren't just diagrams; they're practical tools for smart planning, letting me roll out features one step at a time.
 
