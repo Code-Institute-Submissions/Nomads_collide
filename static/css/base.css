@@ -50,7 +50,6 @@ nav a.nav-link{
   background-blend-mode: overlay;
   height: 400px;
   background-size: cover;
-  background-position: center-left;
 }
 
 .text-container {

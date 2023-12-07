@@ -155,10 +155,8 @@ content. By offering these tailored experiences, our project caters to a diverse
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
@@ -261,8 +259,58 @@ Your emphasis on addressing the most important issues for the MVP demonstrates a
 |            | when clicked on edit button redirected to edit page | click edit button         | pass      |
 |            | when clicked should redirect to delete page         | click delete button       | pass      |
 
+### Responsiveness
 
- 
+## Validation
+
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+**link the html screen shot**
+
+![W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F)
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+**link to CSS screen shot**
+
+![CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnomads-collide-16050dd2f50c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Python
+
+I have used the recommended [Python Validator](https://pep8ci.herokuapp.com/) to validate all of my Python files.
+
+I have included links to the errors I encountered during validation which I corrected.
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/manage.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/settings.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/travel_blog/urls.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/urls.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/home/views.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/admin.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/forms.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/models.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/urls.py)
+
+![Python Validator](https://pep8ci.herokuapp.com/https%253A//raw.githubusercontent.com/StaceyRb89/Nomads_collide/main/blog/views.py)
+
+## Lighthouse Audit
+
+> I have tested in Mobile and Web browser and used the lighthouse extension to test the quality of my load time, I will include some screenshots below.
+
+**include lighthouse images**
+
 ## Deployment
  
 The live deployed application can be found deployed on [Heroku](https://nomads-collide-16050dd2f50c.herokuapp.com).
@@ -285,13 +333,13 @@ Contrastingly, on the live deployment site hosted on Heroku, the debugging mode 
  
 ** In the development of this project, all textual content and images were created are mine. The selection of colors was based on personal preferences. However, for technical implementation and problem-solving, I referenced various sources: **
 #### Code Repositories:
-I referred to publicly available code repositories for inspiration and best practices. Any substantial code borrowed or adapted from these sources has been duly credited within the codebase. I used my previous projects and code to help deliver this project within time.
+> I referred to publicly available code repositories for inspiration and best practices. Any substantial code borrowed or adapted from these sources has been duly credited within the codebase. I used my previous projects and code to help deliver this project within time.
 #### Tutorials and Documentation:
-I utilized online tutorials and documentation to enhance my understanding of certain technologies and frameworks. References to these sources are provided in relevant sections of the code or documentation.
+> I utilized online tutorials and documentation to enhance my understanding of certain technologies and frameworks. References to these sources are provided in relevant sections of the code or documentation.
 #### Online Communities:
-Platforms such as Google, Slack, and Stack Overflow were valuable resources for troubleshooting and seeking assistance when encountering challenges. Contributions and solutions from these online communities have been acknowledged where applicable.
+> Platforms such as Google, Slack, and Stack Overflow were valuable resources for troubleshooting and seeking assistance when encountering challenges. Contributions and solutions from these online communities have been acknowledged where applicable.
 #### Colleagues and Friends:
-I sought guidance and assistance from colleagues and friends, particularly when facing complex issues. Their insights and collaborative efforts have been integral to problem-solving and improvement.
+> I sought guidance and assistance from colleagues and friends, particularly when facing complex issues. Their insights and collaborative efforts have been integral to problem-solving and improvement.
 ** It is important to note that while external resources were used for guidance and learning, the project's creative and intellectual aspects, including writing, color selection, and media content, are entirely my own. Proper attribution and acknowledgment have been made for any external contributions to the codebase or troubleshooting processes. **
  
  
@@ -305,6 +353,6 @@ I sought guidance and assistance from colleagues and friends, particularly when 
 
  
 ### Acknowledgements 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project, those moments of panic when I thought i deleted my work or the after hours messages panicking and bugging you with silly questions
 - I would like to thank my partner Steve, for putting up with me using all of our solar polar so we had no more for heating or boiling the kettle, or the lights would cut out at 6 pm.
 - I would like to thank my colleagues as a whole but mainly Rachel when I wanted to quit, when I wanted to give up she was there pushing me!

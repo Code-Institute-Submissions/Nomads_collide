@@ -2,6 +2,7 @@ from django import forms
 from .models import Blog
 from django.utils import timezone
 
+
 class BlogForm(forms.ModelForm):
     class Meta:
         model = Blog
@@ -39,4 +40,3 @@ class BlogForm(forms.ModelForm):
             instance.save()
 
         return instance
-

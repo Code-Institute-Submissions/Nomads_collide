@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
-from django.views.generic import (CreateView, ListView, 
-DetailView, DeleteView, UpdateView)
+from django.views.generic import (CreateView, ListView,
+                                  DetailView, DeleteView, UpdateView)
 from .models import Blog
 from .forms import BlogForm
 from django.contrib.auth.mixins import (
@@ -11,6 +11,7 @@ from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
+
 
 class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     template_name = 'blog/add_post.html'
@@ -26,33 +27,39 @@ class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
         # Check if the user is a superuser
         return self.request.user.is_superuser
 
+
 class BlogCategories(ListView):
     '''view all blogs'''
-    template_name='blog/blog_categories.html'
+    template_name = 'blog/blog_categories.html'
     model = Blog
-    context_object_name='blogs'
+    context_object_name = 'blogs'
     fields = ['title', 'image', 'category']
-    
+
 
 class ViewBlog(DetailView):
     '''view a single blog'''
-    template_name='blog/view_blog.html'
+    template_name = 'blog/view_blog.html'
     model = Blog
-    context_object_name='blog'
+    context_object_name = 'blog'
+
 
 class EditBlog(
-    LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    LoginRequiredMixin, UserPassesTestMixin, UpdateView
+):
     template_name = 'blog/edit_blog.html'
     model = Blog
-    fields = ['title', 'image', 'image_alt', 'content', 'category', 'status', 'excerpt',]
+    fields = ['title', 'image', 'image_alt', 'content',
+              'category', 'status', 'excerpt', ]
     success_url = '/blog/'
 
     def test_func(self):
         # Check if the user is a superuser
         return self.request.user.is_superuser
 
+
 class DeleteBlog(
-    LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    LoginRequiredMixin, UserPassesTestMixin, DeleteView
+):
     """Delete a blog"""
     model = Blog
     success_url = reverse_lazy('blog_home')

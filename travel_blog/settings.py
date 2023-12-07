@@ -28,7 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-staceyrb89-nomadscollid-7yk197mrrjj.ws-eu106.gitpod.io', 'nomads-collide-16050dd2f50c.herokuapp.com']
+ALLOWED_HOSTS = ['8000-staceyrb89-nomadscollid-7yk197mrrjj.ws-eu106.gitpod.io',
+                 'nomads-collide-16050dd2f50c.herokuapp.com'
+                 ]
 
 
 # Application definition
@@ -45,12 +47,12 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'cloudinary_storage',
-    #Apps
+    # Apps
     'travel_blog',
     'home',
     'blog',
 
-    #Others
+    # Others
     'cloudinary',
     'crispy_forms',
     'crispy_bootstrap4',
@@ -118,16 +120,16 @@ CSRF_TRUSTED_ORIGINS = [
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 

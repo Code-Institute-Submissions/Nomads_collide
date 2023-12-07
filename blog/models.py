@@ -59,11 +59,15 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Blog(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True, null=False)
-    user = models.ForeignKey(User, related_name='blog_owner', on_delete=models.CASCADE, null=True)
-    image = ResizedImageField(size=[400, None], quality=75, upload_to='blogs/', force_format='WEBP', blank=False, null=False)
+    user = models.ForeignKey(
+        User, related_name='blog_owner', on_delete=models.CASCADE, null=True)
+    image = ResizedImageField(size=[400, None], quality=75, upload_to='blogs/',
+                              force_format='WEBP', blank=False, null=False)
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     content = models.TextField()
-    category = models.CharField(max_length=100, choices=CATEGORY, default='albania')
+    category = models.CharField(
+        max_length=100, choices=CATEGORY, default='albania'
+        )
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
@@ -83,6 +87,9 @@ class Blog(models.Model):
     class Meta:
         ordering = ["-created_on"]
 
+
 def blog_categories(request):
     categories = Category.objects.all()
-    return render(request, 'blog/blog_categories.html', {'categories': categories})
+    return render(
+        request, 'blog/blog_categories.html', {'categories': categories}
+    )
