@@ -7,18 +7,9 @@ As I share my experiences on Nomads Collide, it's not just about the destination
 One unique aspect that sets Nomads Collide apart is the inclusion of my furry companions. Converting a campervan enabled me to bring all of my pets along for the adventure. Traveling with them adds an extra layer of joy and companionship to the journey, turning every pit stop into a shared moment of exploration.
 Nomads Collide is for those who find solace in the hum of the road, those who believe that travel is not just a destination but a way of life. Whether you're a fellow van lifer, a curious soul contemplating the nomadic lifestyle, or someone seeking inspiration for your own journey, this blog is a window into the beauty of traveling at your own pace.
 So, buckle up and join us on unexpected detours, and the meaningful connections that happen when we let the journey guide us. Together, let's explore, learn, and grow—one campervan adventure at a time. Welcome aboard!
- 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://nomads-collide-16050dd2f50c.herokuapp.com
- 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
- 
-![screenshot](documentation/mockup.png)
+
+- I have included an image from the Am I responsive website 
+![amiresponsive](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/be522004-cdb6-43ca-b045-5f8d7ebd795e)
  
 **Table of Contents**
  
@@ -29,8 +20,7 @@ To add the image into your README, use this format:
  
 ## UX
  
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- ### My Design Process
+### My Design Process
 Putting together my travel blog was a careful process where I considered how it looks and feels for you. The colors, like the soft ones such as #d8a996, #cb9884, and #f1e6e6, were picked to make you feel comfy and give the blog a calm vibe.
 I also chose fonts that match the blog's personality. The fancy one for headings, Cormorant Garamond, adds a classic touch, while the clean one for paragraphs, Montserrat, keeps things modern and easy to read.
 Making sure the blog looks good on any device was a big deal. Whether you're using a computer, tablet, or phone, the blog adjusts so you can enjoy it without any hassle.
@@ -50,7 +40,7 @@ In a nutshell, the blog's design is all about making your visit comfy, enjoyable
  
 I used [coolors.co](https:// coolors.co/d3c8c4-cb9884-d8a996-f1e6e6) to generate my colour palette.
  
-![screenshot](documentation/coolors.png)
+![colour scheme](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/935c79fe-5c41-4941-af29-a48bdcdb3c6f)
  
 ### Typography
  
@@ -85,86 +75,58 @@ So that **the travel blog is visually enriched with images.**
 - As a **developer**, I can **Initialize a Django project for my travel blog. Set up the basic directory structure for the project.** So that **the project has a well-organized foundation.**
 - As a **developer**, I can **ensure functionality, usability, and responsiveness through testing. Test the contact form and comment functionality**. So that **the application meets quality standards.**
 - As a **developer**, I can **Initialize a Django project for my travel blog. Set up the basic directory structure for the project.** So that **the project has a well-organized foundation.**
-## Wireframes
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
- ### Mobile Wireframes
- Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
+
+### Wireframes
+I've used [canva](https://canva.com) to design my site wireframes.
+
+### Mobile Wireframes
+- The wireframes for mobile are limited due to many of the extra pages, are forms, sign in or out pages and error pages which will all be responsive and fit to the size required.
+![wireframe mobile](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/1873770c-1b46-4a59-8e7c-ea5b5ca99012)
+
  
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
- 
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
- 
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
- 
-etc.
-  - repeat for any remaining mobile wireframes
- 
-< / details >
- 
-### Tablet Wireframes
- 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
- 
-Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
- 
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
- 
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
- 
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
- 
-etc.
-  - repeat for any remaining tablet wireframes
- 
-< / details >
- 
-### Desktop Wireframes
- 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
- 
-Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
- 
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
- 
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
- 
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
- 
-etc.
-  - repeat for any remaining desktop wireframes
- 
-< / details >
+### Tablet/Desktop Wireframes
+- Visitor view
+![wireframe visitor](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/6024f6c1-1d2b-4517-b8c8-13621e671957)
+
+- Admin view
+![wireframe website blog page](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/0d327da3-45cc-4551-8519-70463358bf91)
+![wireframe website admin-user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/a328ad58-94a8-42ad-a47c-81f66523d043)
+
+- Logged in users
+![wireframe all blogs website](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/f361b01a-a973-492c-a54a-52c8713a4af5)
+![website logged in user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/477d5a84-1d06-47fc-bb91-2c3e142c7363)
  
 ## Features
  
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
- 
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
- 
-For some/all of your features, you may choose to reference the specific project files that implement them.
- 
-IMPORTANT: Remember to always include a screenshot of each individual feature!
- 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+For Visitors:
+As a visitor to our blog, you'll be greeted by a main page that boasts a captivating hero image along with some brief but intriguing information. This serves as a teaser, 
+enticing you to delve deeper into the content. From here, you have easy access to our login page, should you decide to become part of our community.
+
+![ipad visitor](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/9d4caa45-f587-4345-9e98-b9d7c89a05e1)
+
+![website visiotr](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/1cec7668-2ee1-4256-941f-b1af45edfc85) - this is what a visitor sees and then the bottom image is what a logged in user sees.
+
+For Logged-In Users:
+Once you've registered, a whole new world opens up. You'll get a personalized homepage experience, tailored to your interests. This distinct view sets the stage for an immersive 
+journey through our blog posts, where you can explore a variety of content featuring both captivating visuals and engaging writing. The "View Blog" page allows you to navigate 
+seamlessly through our posts, and there's a handy "Return" button for convenient navigation.
+
+![admin user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/f61a36b2-2c55-44ec-ac4d-dd680b295a2f)
+
+
+For Superusers:
+As a superuser, you wield the power to shape the blog. Creating, reading, updating, and deleting blog posts can all be accomplished right from the front end. This streamlined 
+process ensures that managing content is not only efficient but also user-friendly. You have the keys to the kingdom, ensuring the blog stays dynamic and relevant.
+
+![ipad admin](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/1a2ac47c-06da-47a6-9a12-99e5f3b05969)
+
+![website admin](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/20374105-c553-4bc1-a291-994c9bff48bc)
+
+![website admin-user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/2965849b-48c0-4329-bdc0-5d07e0e552bb)
+
+Adding Value for Everyone:
+Each feature has a distinct purpose. For visitors, it's about a visually captivating introduction. Logged-in users enjoy a personalized exploration, and superusers take command of the 
+content. By offering these tailored experiences, our project caters to a diverse audience, making the blog a vibrant and engaging space for all.
  
 ### Existing Features
  
