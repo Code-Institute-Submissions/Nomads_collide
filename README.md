@@ -1,7 +1,7 @@
 # [NOMADS COLLIDE](https://nomads-collide-16050dd2f50c.herokuapp.com)
  
-### Who are we?
-Welcome to Nomads Collide, a genuine travel diary that invites you to hop into the passenger seat of my journey through life on the road. This isn't just a project—it's a heartfelt invitation to join me on the winding paths and open road of my adventures, exploring the world one converted Mercedes Vario campervan at a time.
+## Who are we?
+> Welcome to Nomads Collide, a genuine travel diary that invites you to hop into the passenger seat of my journey through life on the road. This isn't just a project—it's a heartfelt invitation to join me on the winding paths and open road of my adventures, exploring the world one converted Mercedes Vario campervan at a time.
 Nomads Collide is the story of how I've turned my campervan into a rolling home for exploring. For me, it's more than just traveling; it's about embracing the nomadic lifestyle, cherishing the freedom of the open road, and discovering the beauty of our planet in its raw and authentic form. I've found that converting a campervan isn't just about creating a vehicle; it's about crafting a home on wheels, a space that allows me to follow my curiosity and live life off the beaten path.
 As I share my experiences on Nomads Collide, it's not just about the destinations but the journey itself—the people met, the unexpected detours taken, and the personal growth that unfolds with every mile traveled. Nomadic living in my campervan has become a transformative way to learn about different cultures, connect with nature, and truly understand the beauty of simplicity.
 One unique aspect that sets Nomads Collide apart is the inclusion of my furry companions. Converting a campervan enabled me to bring all of my pets along for the adventure. Traveling with them adds an extra layer of joy and companionship to the journey, turning every pit stop into a shared moment of exploration.
@@ -11,21 +11,14 @@ So, buckle up and join us on unexpected detours, and the meaningful connections 
 - I have included an image from the Am I responsive website 
 ![amiresponsive](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/be522004-cdb6-43ca-b045-5f8d7ebd795e)
  
-**Table of Contents**
- 
-[TOCM]
- 
-[TOC]
-
- 
 ## UX
  
 ### My Design Process
-Putting together my travel blog was a careful process where I considered how it looks and feels for you. The colors, like the soft ones such as #d8a996, #cb9884, and #f1e6e6, were picked to make you feel comfy and give the blog a calm vibe.
+> Putting together my travel blog was a careful process where I considered how it looks and feels for you. The colors, like the soft ones such as #d8a996, #cb9884, and #f1e6e6, were picked to make you feel comfy and give the blog a calm vibe.
 I also chose fonts that match the blog's personality. The fancy one for headings, Cormorant Garamond, adds a classic touch, while the clean one for paragraphs, Montserrat, keeps things modern and easy to read.
-Making sure the blog looks good on any device was a big deal. Whether you're using a computer, tablet, or phone, the blog adjusts so you can enjoy it without any hassle.
+> Making sure the blog looks good on any device was a big deal. Whether you're using a computer, tablet, or phone, the blog adjusts so you can enjoy it without any hassle.
 Getting around the blog had to be easy too. I set it up so you can find what you're looking for without any trouble. Simple and clear navigation helps you explore travel stories, photos, and tips effortlessly.
-And the fact that I travel in a converted campervan with my pets is a big part of the blog's vibe. It's a bit unique, and I wanted that to shine through in both the words and the pictures.
+> And the fact that I travel in a converted campervan with my pets is a big part of the blog's vibe. It's a bit unique, and I wanted that to shine through in both the words and the pictures.
 In a nutshell, the blog's design is all about making your visit comfy, enjoyable, and maybe even a little inspiring.
  
 ### Colour Scheme
@@ -42,7 +35,7 @@ I used [coolors.co](https:// coolors.co/d3c8c4-cb9884-d8a996-f1e6e6) to generate
  
 ![colour scheme](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/935c79fe-5c41-4941-af29-a48bdcdb3c6f)
  
-### Typography
+## Typography
  
 ## Cormorant Garamond (serif) for Headings (h1-h6):
 > Description: Cormorant Garamond is a classic and elegant serif font, known for its sophistication and readability. It adds a touch of timeless charm to your blog titles and headings.
@@ -98,15 +91,15 @@ I've used [canva](https://canva.com) to design my site wireframes.
  
 ## Features
  
-For Visitors:
+##### For Visitors:
 As a visitor to our blog, you'll be greeted by a main page that boasts a captivating hero image along with some brief but intriguing information. This serves as a teaser, 
-enticing you to delve deeper into the content. From here, you have easy access to our login page, should you decide to become part of our community.
+enticing you to delve deeper into the content. From here, you have easy access to our login page, should you decide to become part of our community. A visitor is able to see the navbar, footer and the hero image along with a short blurb about why you should sign up.
 
 ![ipad visitor](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/9d4caa45-f587-4345-9e98-b9d7c89a05e1)
 
 ![website visiotr](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/1cec7668-2ee1-4256-941f-b1af45edfc85) - this is what a visitor sees and then the bottom image is what a logged in user sees.
 
-For Logged-In Users:
+##### For Logged-In Users:
 Once you've registered, a whole new world opens up. You'll get a personalized homepage experience, tailored to your interests. This distinct view sets the stage for an immersive 
 journey through our blog posts, where you can explore a variety of content featuring both captivating visuals and engaging writing. The "View Blog" page allows you to navigate 
 seamlessly through our posts, and there's a handy "Return" button for convenient navigation.
@@ -114,7 +107,7 @@ seamlessly through our posts, and there's a handy "Return" button for convenient
 ![admin user](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/f61a36b2-2c55-44ec-ac4d-dd680b295a2f)
 
 
-For Superusers:
+##### For Superusers:
 As a superuser, you wield the power to shape the blog. Creating, reading, updating, and deleting blog posts can all be accomplished right from the front end. This streamlined 
 process ensures that managing content is not only efficient but also user-friendly. You have the keys to the kingdom, ensuring the blog stays dynamic and relevant.
 
@@ -128,7 +121,7 @@ Adding Value for Everyone:
 Each feature has a distinct purpose. For visitors, it's about a visually captivating introduction. Logged-in users enjoy a personalized exploration, and superusers take command of the 
 content. By offering these tailored experiences, our project caters to a diverse audience, making the blog a vibrant and engaging space for all.
  
-### Existing Features
+## Existing Features
  
 - **Title for feature #1**
  
@@ -148,19 +141,10 @@ content. By offering these tailored experiences, our project caters to a diverse
  
 ![screenshot](documentation/feature03.png)
  
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
-Repeat as necessary for as many features as your site contains.
- 
-Hint: the more, the merrier!
- 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
 ## Future Plans for Nomads Collide:
 
-### Category Expansion:
+## Category Expansion:
 
-> Introduce distinct categories on the blog to reflect different aspects of life, such as camper van living, smallholding experiences, and personal development.
 ### Enhanced Search Functionality:
 > Implement a search box within the site to facilitate easy navigation and content discovery.
 > Integrated Community Support Company:
@@ -201,33 +185,34 @@ Hint: the more, the merrier!
 - [Coolors](https://coolors.co) Employed for generating and exploring color palettes.
 - [Google](https://www.google.com) Utilized for general research, information gathering, and various online tools.
 - [Chatgpt](https://www.chatgpt.com) Utilized for general bug fixing
+  
 ## Database Design
+> When I was putting together my blog website, sketching out an Entity Relationship Diagram (ERD) turned out to be helpful in establishing my models. It was like creating a roadmap for the database – making it clear where everything connects. With a tight one-week deadline to get the MVP out, that ERD was my guiding light. It helped me narrow down my focus to the absolute must-haves: user registration and blog post creation.
+
+> Deciding to hold off on the comments section was a tough call, but the ERD showed me how complex it could get. So, I deferred it to make sure the MVP hit the ground running. ERDs aren't just diagrams; they're practical tools for smart planning, letting me roll out features one step at a time.
+
 ## Agile Development Process
 ### GitHub Projects
+> Github Projects became my go-to hub, helping me juggle the different roles I had to play. With the clock ticking for the one-week MVP, that board kept me sane. It became a visual roadmap, letting me break down tasks into bite-sized chunks. Whether I was coding, designing, or playing the editor, that project board made sure nothing fell through the cracks. Wearing many hats is no joke, but having a structured plan in GitHub made it a whole lot smoother.
+
 [GitHub Projects](https://github.com/StaceyRb89/Nomads_collide/projects) served as an Agile tool for this project.
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
   
 ## Projects Board
  
 ### GitHub Issues
 [GitHub Issues](https://github.com/StaceyRb89/Nomads_collide/issues) served as an another Agile tool.
-Considering users, administrators, and the marking criteria while writing issues is a strategic approach that helps prioritize and focus on the most crucial features for the Minimum Viable Product (MVP). By understanding the needs and expectations of different stakeholders, you can ensure that the initial version of the project meets essential requirements and provides a functional foundation. This iterative and user-centric approach allows for a quicker development cycle, enabling you to deliver a viable product within a short timeframe.
+> Considering users, administrators, and the marking criteria while writing issues is a strategic approach that helps prioritize and focus on the most crucial features for the Minimum Viable Product (MVP). By understanding the needs and expectations of different stakeholders, you can ensure that the initial version of the project meets essential requirements and provides a functional foundation. This iterative and user-centric approach allows for a quicker development cycle, enabling you to deliver a viable product within a short timeframe.
 Your emphasis on addressing the most important issues for the MVP demonstrates a thoughtful consideration of project priorities and a commitment to delivering value efficiently. This approach aligns with agile development principles, allowing for rapid iterations and improvements based on user feedback and evolving project requirements. It also sets a solid foundation for future enhancements and feature additions as the project progresses.
  
 - [Open Issues](https://github.com/StaceyRb89/Nomads_collide/issues)
- 
-	![screenshot](documentation/gh-issues-open.png)
+
+ ![non imlemented issue](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/b1d59975-4676-439a-a158-d8a78546c218)
+
  
 - [Closed Issues](https://github.com/StaceyRb89/Nomads_collide/issues?q=is%3Aissue+is%3Aclosed)
- 
-    ![screenshot](documentation/gh-issues-closed.png)
- 
-### MoSCoW Prioritization
 
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
+![projects board](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/acd42853-943e-4b3a-9a08-745d4b981a31)
+
  
 ## Testing
  
@@ -235,111 +220,27 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
  
 ## Deployment
  
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
-**IMPORTANT:**
- 
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
- 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
 The live deployed application can be found deployed on [Heroku](https://nomads-collide-16050dd2f50c.herokuapp.com).
  
 ### ElephantSQL Database
  
 This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
- 
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
- 
-- Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: Nomads_collide).
-- Select the **Tiny Turtle (Free)** plan.
-- You can leave the **Tags** blank.
-- Select the **Region** and **Data Center** closest to you.
-- Once created, click on the new database name, where you can view the database URL and Password.
-  
-### Heroku Deployment
 
-### Local Deployment
- 
-This project can be cloned or forked in order to make a local copy on your own system.
- 
-For either method, you will need to install any applicable packages found within the *requirements.txt* file.
- 
-- `pip3 install -r requirements.txt`.
- 
-You will need to create a new file called `env.py` at the root-level,
-and include the same environment variables listed above from the Heroku deployment steps.
- 
-Sample `env.py` file:
- 
-```python
-import os
- 
-os.environ.setdefault("CLOUDINARY_URL", "user's own value")
-os.environ.setdefault("DATABASE_URL", "user's own value")
-os.environ.setdefault("SECRET_KEY", "user's own value")
- 
-# local environment only (do not include these in production/deployment!)
-os.environ.setdefault("DEBUG", "True")
-```
- 
-Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
- 
-- Start the Django app: `python3 manage.py runserver`
-- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
-- Make any necessary migrations: `python3 manage.py makemigrations`
-- Migrate the data to the database: `python3 manage.py migrate`
-- Create a superuser: `python3 manage.py createsuperuser`
-- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
-- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
- 
-#### Cloning
- 
-You can clone the repository by following these steps:
- 
-1. Go to the [GitHub repository](https://github.com/StaceyRb89/Nomads_collide)
-2. Locate the Code button above the list of files and click it
-3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
-5. Change the current working directory to the one where you want the cloned directory
-6. In your IDE Terminal, type the following command to clone my repository:
-          	- `git clone https://github.com/StaceyRb89/Nomads_collide.git`
-7. Press Enter to create your local clone.
- 
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
- 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/StaceyRb89/Nomads_collide)
- 
-Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
-A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
- 
-#### Forking
- 
-By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
-You can fork this repository by using the following steps:
- 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/StaceyRb89/Nomads_collide)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
- 
-### Local VS Deployment
- 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
- 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![admin database](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/458b70bb-3d06-4369-a173-3ffafff8f18e)
+
+## Local VS Deployment
+
+> Local Development Version:
+When working on the local version, I've configured the system to run with debugging enabled. This means that if any errors occur during development, the system provides detailed error messages that I can read and analyze promptly. This debugging capability is immensely beneficial during the development phase, as it allows for quick identification and resolution of issues.
+
+> Live Deployment on Heroku:
+Contrastingly, on the live deployment site hosted on Heroku, the debugging mode is set to false. This is a security measure and best practice for production environments. While it enhances the security of the application by not exposing detailed error messages to potential attackers, it does mean that when errors occur, the end-users are presented with a more user-friendly, generic error page.
  
 ## Credits
  
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
- 
 ** In the development of this project, all textual content and images were created are mine. The selection of colors was based on personal preferences. However, for technical implementation and problem-solving, I referenced various sources: **
 #### Code Repositories:
-I referred to publicly available code repositories for inspiration and best practices. Any substantial code borrowed or adapted from these sources has been duly credited within the codebase.
+I referred to publicly available code repositories for inspiration and best practices. Any substantial code borrowed or adapted from these sources has been duly credited within the codebase. I used my previous projects and code to help deliver this project within time.
 #### Tutorials and Documentation:
 I utilized online tutorials and documentation to enhance my understanding of certain technologies and frameworks. References to these sources are provided in relevant sections of the code or documentation.
 #### Online Communities:
@@ -353,8 +254,10 @@ I sought guidance and assistance from colleagues and friends, particularly when 
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
 | [Youtube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc) | All of it |
-
+| [Youtube](https://www.youtube.com/watch?v=gsW5gYTNi34) | video | All of it |
 | [Font Awesome](https://fontawesome.com/kits) | entire site | image | favicon on all pages |
+| [Youtube](https://www.youtube.com/watch?v=OBsLgCm-Ayo&list=PL_KegS2ON4s580mS3nPt5x_eu6kO2cvOc) | video | All of it |
+
  
 ### Acknowledgements 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
