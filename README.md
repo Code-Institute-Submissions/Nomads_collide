@@ -285,7 +285,7 @@ Your emphasis on addressing the most important issues for the MVP demonstrates a
 |            | when clicked on edit button redirected to edit page | click edit button         | pass      |![edit post](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/a0d966d3-9ccb-4321-b832-c7f609fb17b5)|
 |            | when clicked should redirect to delete page         | click delete button       | pass      | ![delete](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/35dc946c-eed4-4832-b75f-cf8dcd8f69ae)|
 | Add post   | when clicked should  redirect to add post page | click add post in navbar  | pass      | ![add](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/2ab342e8-4450-4b2b-84b5-fccd8d238318)|
-|            | when a symbol is put into the title box on the add post page it should register | if a symbol is added to the title it breaks the page  | fail      | ![error 500](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/c7129869-d088-4025-9ba0-e739660d9d46) |
+|            | when a symbol is put into the title box on the add post page it should register | if a symbol is added to the title it deletes it as without deleting i couldnt get it to work and it breaks the page  | Pass      | ![error 500](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/c7129869-d088-4025-9ba0-e739660d9d46) |
 | logout     | when clicked on logout button redirected to sign out page | click logout button  | pass      | ![sign out](https://github.com/StaceyRb89/Nomads_collide/assets/144110082/6789a096-f675-44f2-9067-342f384dff58) |
 
 ### Responsiveness

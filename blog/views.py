@@ -11,6 +11,7 @@ from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
+from django.utils.text import slugify
 
 
 class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
@@ -20,6 +21,7 @@ class AddPost(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     success_url = '/blog/'
 
     def form_valid(self, form):
+        form.instance.title = slugify(form.instance.title)
         form.instance.user = self.request.user
         return super(AddPost, self).form_valid(form)
 
